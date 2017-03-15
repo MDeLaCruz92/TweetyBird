@@ -10,7 +10,17 @@ import LBTAComponents
 
 class HomeDatasource: Datasource {
   
-  let words = ["user1", "user2", "user3"]
+  let users: [User] = {
+    let myUser = User(name: "Michael De La Cruz", username: "@iOS_Developer", bioText: "We fear what we don't know, but once we know it, we no longer fear it.", profileImage: #imageLiteral(resourceName: "profile_image"))
+    
+    let bobbyUser = User(name: "Bobby", username: "@Bobbyyyy", bioText: "Bobby is a Mobile and Web Developer who likes to take risks and go beyond the expectations for his clients.", profileImage: #imageLiteral(resourceName: "bobbys_profile_image"))
+    
+    let iOSTenCourse = User(name: "iOS 10 Course", username: "@iOS10Course", bioText: "This recently released course on https://github.com/MDelaCruz92 provides a helping hand and excellent guidance on how to use UITableView and UICollectionView", profileImage: #imageLiteral(resourceName: "profile_image"))
+        
+    return [myUser, bobbyUser, iOSTenCourse]
+  }()
+  
+//  let words = ["user1", "user2", "user3"]
   
   override func footerClasses() -> [AnyClass]? {
     return [UserFooter.self]
@@ -25,10 +35,10 @@ class HomeDatasource: Datasource {
   }
   
   override func item(_ indexPath: IndexPath) -> Any? {
-    return words[indexPath.item]
+    return users[indexPath.item]
   }
   
   override func numberOfItems(_ section: Int) -> Int {
-    return words.count
+    return users.count
   }
 }

@@ -15,6 +15,8 @@
 		826AE0D11E77AB8800020B2F /* HomeDatasourceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826AE0D01E77AB8800020B2F /* HomeDatasourceController.swift */; };
 		826AE0D71E784C6C00020B2F /* Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826AE0D61E784C6C00020B2F /* Cells.swift */; };
 		826AE0D91E784CCC00020B2F /* HomeDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826AE0D81E784CCC00020B2F /* HomeDatasource.swift */; };
+		826AE0DD1E79873400020B2F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826AE0DC1E79873400020B2F /* User.swift */; };
+		826AE0DF1E79B7D400020B2F /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826AE0DE1E79B7D400020B2F /* UserCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		826AE0D01E77AB8800020B2F /* HomeDatasourceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDatasourceController.swift; sourceTree = "<group>"; };
 		826AE0D61E784C6C00020B2F /* Cells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cells.swift; sourceTree = "<group>"; };
 		826AE0D81E784CCC00020B2F /* HomeDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDatasource.swift; sourceTree = "<group>"; };
+		826AE0DC1E79873400020B2F /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		826AE0DE1E79B7D400020B2F /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		9AEF225073D1A38BE16B20EB /* Pods-TweetyBird.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TweetyBird.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TweetyBird/Pods-TweetyBird.debug.xcconfig"; sourceTree = "<group>"; };
 		CDF22BC7A52D7DC6F62A5C14 /* Pods-TweetyBird.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TweetyBird.release.xcconfig"; path = "Pods/Target Support Files/Pods-TweetyBird/Pods-TweetyBird.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -97,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				826AE0D81E784CCC00020B2F /* HomeDatasource.swift */,
+				826AE0DC1E79873400020B2F /* User.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -105,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				826AE0D61E784C6C00020B2F /* Cells.swift */,
+				826AE0DE1E79B7D400020B2F /* UserCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -243,9 +249,11 @@
 			files = (
 				826AE0D91E784CCC00020B2F /* HomeDatasource.swift in Sources */,
 				826AE0D11E77AB8800020B2F /* HomeDatasourceController.swift in Sources */,
+				826AE0DD1E79873400020B2F /* User.swift in Sources */,
 				826AE0D71E784C6C00020B2F /* Cells.swift in Sources */,
 				824656C81E73B0D2000F8A81 /* HomeVC.swift in Sources */,
 				824656B61E739D00000F8A81 /* AppDelegate.swift in Sources */,
+				826AE0DF1E79B7D400020B2F /* UserCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
