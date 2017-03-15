@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06D8632AB1A8C0EB49BBD3B349018281 /* NSMutableAttributedString+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDA366A16F582219CFE10DF34D0E020 /* NSMutableAttributedString+Helper.swift */; };
+		1C12E8B00DB1C69AF8A7ED920A307D4E /* LBTATextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5E639850C87D68CFE3E7437EF00B00 /* LBTATextView.swift */; };
+		2BC61E2FAB7A9863FBACB2B6C4C8C56A /* LBTAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C990F1C27AB232D5230BBD61D85E850D /* LBTAButton.swift */; };
+		3BA49545875012B53F9E13E9C7D28B6D /* LBTAComponents-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6FF143A94242F97058F6BE3E5C44C9 /* LBTAComponents-dummy.m */; };
+		437865A90C343E1A5F577CA114437CE6 /* DatasourceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A111A924192CE86C79B19C92769007 /* DatasourceController.swift */; };
+		4E15DD920D12DD345D9553F9AF965561 /* UIImage+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69973CD4A768F037D925CBB59B75DD0F /* UIImage+Helper.swift */; };
+		943E2B4A6EF8EEED286EFBA7E898661F /* Datasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F5872A53266E071F5AC2D6B781C211 /* Datasource.swift */; };
+		9F3D59765C6DB55B42BF971DC21A0D29 /* Pods-TweetyBird-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BA7C85B7B398577F2A0AAF0EB5C312 /* Pods-TweetyBird-dummy.m */; };
+		A41185949B8440C8ECB2003846F3B738 /* Pods-TweetyBird-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 410F5F16F715B122EA10078EB5D8FD10 /* Pods-TweetyBird-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9792FAC69756C3680B7AB7EAC2DE5B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		C0032E4CE862B0C25172968A617B735F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		C2B2AF6BAD6B0F56FA1A8BD915BE7344 /* CachedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C618766AEF7DACC0394AB5964C9DA38E /* CachedImageView.swift */; };
+		C456F273B2B24C6463E0E3AAAA78327B /* UIView+Anchors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4486D71D1B828F5662CAB877835D523F /* UIView+Anchors.swift */; };
+		C861176451CAC437626BD72519CEFB14 /* UIColor+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C4DE3D10661314E2F65DEC23D09755 /* UIColor+Helper.swift */; };
+		D4A3826C94BF6B7AF6FF5F53CCCADC84 /* DatasourceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494953E1C5CBB3DE410319ADD08D4145 /* DatasourceCell.swift */; };
+		E7147233F46B8D6EDD52D8B8E376B00C /* DefaultCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EACA04823044E1B37596D929C8D03A /* DefaultCells.swift */; };
+		E81977B406C4DEA59FAE93F5C5C72E24 /* LBTAComponents-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D079862E79C286ADE830F09675FC91F6 /* LBTAComponents-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1022A044DE202B0692454CF3E8127FA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E35687C067A6F817E828C326CDF7936;
+			remoteInfo = LBTAComponents;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01BA7C85B7B398577F2A0AAF0EB5C312 /* Pods-TweetyBird-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TweetyBird-dummy.m"; sourceTree = "<group>"; };
+		0DDA366A16F582219CFE10DF34D0E020 /* NSMutableAttributedString+Helper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSMutableAttributedString+Helper.swift"; path = "LBTAComponents/Classes/NSMutableAttributedString+Helper.swift"; sourceTree = "<group>"; };
+		3FE1A46EBF9B09A59A75F786C6B0A23C /* Pods-TweetyBird-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TweetyBird-frameworks.sh"; sourceTree = "<group>"; };
+		410F5F16F715B122EA10078EB5D8FD10 /* Pods-TweetyBird-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TweetyBird-umbrella.h"; sourceTree = "<group>"; };
+		4486D71D1B828F5662CAB877835D523F /* UIView+Anchors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Anchors.swift"; path = "LBTAComponents/Classes/UIView+Anchors.swift"; sourceTree = "<group>"; };
+		494953E1C5CBB3DE410319ADD08D4145 /* DatasourceCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DatasourceCell.swift; path = LBTAComponents/Classes/DatasourceCell.swift; sourceTree = "<group>"; };
+		55EACA04823044E1B37596D929C8D03A /* DefaultCells.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultCells.swift; path = LBTAComponents/Classes/DefaultCells.swift; sourceTree = "<group>"; };
+		59C4DE3D10661314E2F65DEC23D09755 /* UIColor+Helper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+Helper.swift"; path = "LBTAComponents/Classes/UIColor+Helper.swift"; sourceTree = "<group>"; };
+		69973CD4A768F037D925CBB59B75DD0F /* UIImage+Helper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+Helper.swift"; path = "LBTAComponents/Classes/UIImage+Helper.swift"; sourceTree = "<group>"; };
+		71A111A924192CE86C79B19C92769007 /* DatasourceController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DatasourceController.swift; path = LBTAComponents/Classes/DatasourceController.swift; sourceTree = "<group>"; };
+		77F5872A53266E071F5AC2D6B781C211 /* Datasource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Datasource.swift; path = LBTAComponents/Classes/Datasource.swift; sourceTree = "<group>"; };
+		7BFADBB94B4F18B29B4978400647B62E /* Pods-TweetyBird.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TweetyBird.release.xcconfig"; sourceTree = "<group>"; };
+		812251D8EDA9249F2E91BAA4F469D3F6 /* Pods-TweetyBird.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TweetyBird.debug.xcconfig"; sourceTree = "<group>"; };
+		8DAA910606C939F2FD7516EEC462A61A /* Pods-TweetyBird-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TweetyBird-resources.sh"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		979FD9B3CA8B060D7707BAF0DD884D63 /* LBTAComponents.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LBTAComponents.xcconfig; sourceTree = "<group>"; };
+		AA7756B337E775F1E6ECEDF5908549EB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABCE0A68C72317205F04128611E69908 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACF1F4C3ED7AA78DADDC10AEB24DA212 /* Pods-TweetyBird-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TweetyBird-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B0824FEEF5D744A50C0CBE1FB60EBDBC /* LBTAComponents-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LBTAComponents-prefix.pch"; sourceTree = "<group>"; };
+		B11FBD41AB4512E012C09BC14CF33DC2 /* Pods-TweetyBird.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TweetyBird.modulemap"; sourceTree = "<group>"; };
+		BE6FF143A94242F97058F6BE3E5C44C9 /* LBTAComponents-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LBTAComponents-dummy.m"; sourceTree = "<group>"; };
+		C21EFA0E1E43068D079F2003DD0688FB /* Pods_TweetyBird.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TweetyBird.framework; path = "Pods-TweetyBird.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C618766AEF7DACC0394AB5964C9DA38E /* CachedImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CachedImageView.swift; path = LBTAComponents/Classes/CachedImageView.swift; sourceTree = "<group>"; };
+		C990F1C27AB232D5230BBD61D85E850D /* LBTAButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LBTAButton.swift; path = LBTAComponents/Classes/LBTAButton.swift; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D079862E79C286ADE830F09675FC91F6 /* LBTAComponents-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LBTAComponents-umbrella.h"; sourceTree = "<group>"; };
+		D7891F0B747FDE6F11AA822F154BFB83 /* LBTAComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LBTAComponents.framework; path = LBTAComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC5E639850C87D68CFE3E7437EF00B00 /* LBTATextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LBTATextView.swift; path = LBTAComponents/Classes/LBTATextView.swift; sourceTree = "<group>"; };
+		DF46C1DBD7B51AC8AACDB90A18416255 /* LBTAComponents.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = LBTAComponents.modulemap; sourceTree = "<group>"; };
+		F084A8F36E163FEE38B542FD0E090EF6 /* Pods-TweetyBird-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TweetyBird-acknowledgements.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0F2D52408D7F34EA4D3C2E5B55D75471 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9792FAC69756C3680B7AB7EAC2DE5B1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B59D45AF08D3823C3C144EF148DC24B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0032E4CE862B0C25172968A617B735F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0FC955309FCD033BEDA4F03AEEA8BC7D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				ABCE0A68C72317205F04128611E69908 /* Info.plist */,
+				DF46C1DBD7B51AC8AACDB90A18416255 /* LBTAComponents.modulemap */,
+				979FD9B3CA8B060D7707BAF0DD884D63 /* LBTAComponents.xcconfig */,
+				BE6FF143A94242F97058F6BE3E5C44C9 /* LBTAComponents-dummy.m */,
+				B0824FEEF5D744A50C0CBE1FB60EBDBC /* LBTAComponents-prefix.pch */,
+				D079862E79C286ADE830F09675FC91F6 /* LBTAComponents-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/LBTAComponents";
+			sourceTree = "<group>";
+		};
+		23DCCF4806EBCA3FFC367891D7485052 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				74B93DE17F3AA82B5ED48E02DCD18DD2 /* Pods-TweetyBird */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		2AF441211A0D83DD8B3BB441C8B7EFF2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D7891F0B747FDE6F11AA822F154BFB83 /* LBTAComponents.framework */,
+				C21EFA0E1E43068D079F2003DD0688FB /* Pods_TweetyBird.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		74B93DE17F3AA82B5ED48E02DCD18DD2 /* Pods-TweetyBird */ = {
+			isa = PBXGroup;
+			children = (
+				AA7756B337E775F1E6ECEDF5908549EB /* Info.plist */,
+				B11FBD41AB4512E012C09BC14CF33DC2 /* Pods-TweetyBird.modulemap */,
+				ACF1F4C3ED7AA78DADDC10AEB24DA212 /* Pods-TweetyBird-acknowledgements.markdown */,
+				F084A8F36E163FEE38B542FD0E090EF6 /* Pods-TweetyBird-acknowledgements.plist */,
+				01BA7C85B7B398577F2A0AAF0EB5C312 /* Pods-TweetyBird-dummy.m */,
+				3FE1A46EBF9B09A59A75F786C6B0A23C /* Pods-TweetyBird-frameworks.sh */,
+				8DAA910606C939F2FD7516EEC462A61A /* Pods-TweetyBird-resources.sh */,
+				410F5F16F715B122EA10078EB5D8FD10 /* Pods-TweetyBird-umbrella.h */,
+				812251D8EDA9249F2E91BAA4F469D3F6 /* Pods-TweetyBird.debug.xcconfig */,
+				7BFADBB94B4F18B29B4978400647B62E /* Pods-TweetyBird.release.xcconfig */,
+			);
+			name = "Pods-TweetyBird";
+			path = "Target Support Files/Pods-TweetyBird";
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				912892C45AF2FD4EAB1466D70BCF76A9 /* Pods */,
+				2AF441211A0D83DD8B3BB441C8B7EFF2 /* Products */,
+				23DCCF4806EBCA3FFC367891D7485052 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		912892C45AF2FD4EAB1466D70BCF76A9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D0A27BC5537AF72C2AB3A6D97CE7504B /* LBTAComponents */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D0A27BC5537AF72C2AB3A6D97CE7504B /* LBTAComponents */ = {
+			isa = PBXGroup;
+			children = (
+				C618766AEF7DACC0394AB5964C9DA38E /* CachedImageView.swift */,
+				77F5872A53266E071F5AC2D6B781C211 /* Datasource.swift */,
+				494953E1C5CBB3DE410319ADD08D4145 /* DatasourceCell.swift */,
+				71A111A924192CE86C79B19C92769007 /* DatasourceController.swift */,
+				55EACA04823044E1B37596D929C8D03A /* DefaultCells.swift */,
+				C990F1C27AB232D5230BBD61D85E850D /* LBTAButton.swift */,
+				DC5E639850C87D68CFE3E7437EF00B00 /* LBTATextView.swift */,
+				0DDA366A16F582219CFE10DF34D0E020 /* NSMutableAttributedString+Helper.swift */,
+				59C4DE3D10661314E2F65DEC23D09755 /* UIColor+Helper.swift */,
+				69973CD4A768F037D925CBB59B75DD0F /* UIImage+Helper.swift */,
+				4486D71D1B828F5662CAB877835D523F /* UIView+Anchors.swift */,
+				0FC955309FCD033BEDA4F03AEEA8BC7D /* Support Files */,
+			);
+			name = LBTAComponents;
+			path = LBTAComponents;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		06DD485B86906C7B3AF287E0F8F3E8F5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E81977B406C4DEA59FAE93F5C5C72E24 /* LBTAComponents-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27D80656FCD50271A33D0E0EF236BF2A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A41185949B8440C8ECB2003846F3B738 /* Pods-TweetyBird-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1E35687C067A6F817E828C326CDF7936 /* LBTAComponents */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F632CB930E0DBC33AF970A7BC9E3E658 /* Build configuration list for PBXNativeTarget "LBTAComponents" */;
+			buildPhases = (
+				E8E76918546369D386933271C45C5DC9 /* Sources */,
+				5B59D45AF08D3823C3C144EF148DC24B /* Frameworks */,
+				06DD485B86906C7B3AF287E0F8F3E8F5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LBTAComponents;
+			productName = LBTAComponents;
+			productReference = D7891F0B747FDE6F11AA822F154BFB83 /* LBTAComponents.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A0F33D9A3AAFA17198A20975D5FF580D /* Pods-TweetyBird */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC27A9813951894F43CAE4A51645EF04 /* Build configuration list for PBXNativeTarget "Pods-TweetyBird" */;
+			buildPhases = (
+				ACFC1BF01D320B8D3CE2C2073691F30F /* Sources */,
+				0F2D52408D7F34EA4D3C2E5B55D75471 /* Frameworks */,
+				27D80656FCD50271A33D0E0EF236BF2A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2344149ED9AFA74424966E5E370E8024 /* PBXTargetDependency */,
+			);
+			name = "Pods-TweetyBird";
+			productName = "Pods-TweetyBird";
+			productReference = C21EFA0E1E43068D079F2003DD0688FB /* Pods_TweetyBird.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 2AF441211A0D83DD8B3BB441C8B7EFF2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1E35687C067A6F817E828C326CDF7936 /* LBTAComponents */,
+				A0F33D9A3AAFA17198A20975D5FF580D /* Pods-TweetyBird */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ACFC1BF01D320B8D3CE2C2073691F30F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F3D59765C6DB55B42BF971DC21A0D29 /* Pods-TweetyBird-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8E76918546369D386933271C45C5DC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2B2AF6BAD6B0F56FA1A8BD915BE7344 /* CachedImageView.swift in Sources */,
+				943E2B4A6EF8EEED286EFBA7E898661F /* Datasource.swift in Sources */,
+				D4A3826C94BF6B7AF6FF5F53CCCADC84 /* DatasourceCell.swift in Sources */,
+				437865A90C343E1A5F577CA114437CE6 /* DatasourceController.swift in Sources */,
+				E7147233F46B8D6EDD52D8B8E376B00C /* DefaultCells.swift in Sources */,
+				2BC61E2FAB7A9863FBACB2B6C4C8C56A /* LBTAButton.swift in Sources */,
+				3BA49545875012B53F9E13E9C7D28B6D /* LBTAComponents-dummy.m in Sources */,
+				1C12E8B00DB1C69AF8A7ED920A307D4E /* LBTATextView.swift in Sources */,
+				06D8632AB1A8C0EB49BBD3B349018281 /* NSMutableAttributedString+Helper.swift in Sources */,
+				C861176451CAC437626BD72519CEFB14 /* UIColor+Helper.swift in Sources */,
+				4E15DD920D12DD345D9553F9AF965561 /* UIImage+Helper.swift in Sources */,
+				C456F273B2B24C6463E0E3AAAA78327B /* UIView+Anchors.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2344149ED9AFA74424966E5E370E8024 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LBTAComponents;
+			target = 1E35687C067A6F817E828C326CDF7936 /* LBTAComponents */;
+			targetProxy = 1022A044DE202B0692454CF3E8127FA9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3B898B03687F1B0186D15171E80D84D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 812251D8EDA9249F2E91BAA4F469D3F6 /* Pods-TweetyBird.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TweetyBird/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TweetyBird/Pods-TweetyBird.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TweetyBird;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		673254EEAF0B5BF4596080C749645884 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA1B5BAEA7808377EF696CCB6FFA4562 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BFADBB94B4F18B29B4978400647B62E /* Pods-TweetyBird.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TweetyBird/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TweetyBird/Pods-TweetyBird.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TweetyBird;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		E653FA49BC7C8422FEEA02E93F5FEE1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 979FD9B3CA8B060D7707BAF0DD884D63 /* LBTAComponents.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LBTAComponents/LBTAComponents-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LBTAComponents/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LBTAComponents/LBTAComponents.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = LBTAComponents;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F7AF444DCF56B17315837AC96B46195E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 979FD9B3CA8B060D7707BAF0DD884D63 /* LBTAComponents.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LBTAComponents/LBTAComponents-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LBTAComponents/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LBTAComponents/LBTAComponents.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = LBTAComponents;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */,
+				673254EEAF0B5BF4596080C749645884 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC27A9813951894F43CAE4A51645EF04 /* Build configuration list for PBXNativeTarget "Pods-TweetyBird" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B898B03687F1B0186D15171E80D84D5 /* Debug */,
+				AA1B5BAEA7808377EF696CCB6FFA4562 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F632CB930E0DBC33AF970A7BC9E3E658 /* Build configuration list for PBXNativeTarget "LBTAComponents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7AF444DCF56B17315837AC96B46195E /* Debug */,
+				E653FA49BC7C8422FEEA02E93F5FEE1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

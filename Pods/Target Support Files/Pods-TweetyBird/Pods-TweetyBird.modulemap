@@ -1,0 +1,6 @@
+framework module Pods_TweetyBird {
+  umbrella header "Pods-TweetyBird-umbrella.h"
+
+  export *
+  module * { export * }
+}

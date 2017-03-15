@@ -1,0 +1,411 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		76B4B1E683EE3BAE8D11C5FC /* Pods_TweetyBird.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049855B201C84F903B37238D /* Pods_TweetyBird.framework */; };
+		824656B61E739D00000F8A81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824656B51E739D00000F8A81 /* AppDelegate.swift */; };
+		824656BD1E739D00000F8A81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 824656BC1E739D00000F8A81 /* Assets.xcassets */; };
+		824656C01E739D00000F8A81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 824656BE1E739D00000F8A81 /* LaunchScreen.storyboard */; };
+		824656C81E73B0D2000F8A81 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824656C71E73B0D2000F8A81 /* HomeVC.swift */; };
+		826AE0D11E77AB8800020B2F /* HomeDatasourceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826AE0D01E77AB8800020B2F /* HomeDatasourceController.swift */; };
+		826AE0D71E784C6C00020B2F /* Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826AE0D61E784C6C00020B2F /* Cells.swift */; };
+		826AE0D91E784CCC00020B2F /* HomeDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826AE0D81E784CCC00020B2F /* HomeDatasource.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		049855B201C84F903B37238D /* Pods_TweetyBird.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TweetyBird.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		824656B21E739D00000F8A81 /* TweetyBird.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TweetyBird.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		824656B51E739D00000F8A81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		824656BC1E739D00000F8A81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		824656BF1E739D00000F8A81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		824656C11E739D00000F8A81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		824656C71E73B0D2000F8A81 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		826AE0D01E77AB8800020B2F /* HomeDatasourceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDatasourceController.swift; sourceTree = "<group>"; };
+		826AE0D61E784C6C00020B2F /* Cells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cells.swift; sourceTree = "<group>"; };
+		826AE0D81E784CCC00020B2F /* HomeDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDatasource.swift; sourceTree = "<group>"; };
+		9AEF225073D1A38BE16B20EB /* Pods-TweetyBird.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TweetyBird.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TweetyBird/Pods-TweetyBird.debug.xcconfig"; sourceTree = "<group>"; };
+		CDF22BC7A52D7DC6F62A5C14 /* Pods-TweetyBird.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TweetyBird.release.xcconfig"; path = "Pods/Target Support Files/Pods-TweetyBird/Pods-TweetyBird.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		824656AF1E739D00000F8A81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76B4B1E683EE3BAE8D11C5FC /* Pods_TweetyBird.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D1907D2E81B78FF53730354 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				049855B201C84F903B37238D /* Pods_TweetyBird.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		824656A91E739D00000F8A81 = {
+			isa = PBXGroup;
+			children = (
+				824656B41E739D00000F8A81 /* TweetyBird */,
+				824656B31E739D00000F8A81 /* Products */,
+				E3B9292391F9E8E2CBFD8F99 /* Pods */,
+				2D1907D2E81B78FF53730354 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		824656B31E739D00000F8A81 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				824656B21E739D00000F8A81 /* TweetyBird.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		824656B41E739D00000F8A81 /* TweetyBird */ = {
+			isa = PBXGroup;
+			children = (
+				826AE0D41E784B8C00020B2F /* View */,
+				826AE0D31E784B8600020B2F /* Model */,
+				826AE0D21E784B8000020B2F /* Controller */,
+				824656BC1E739D00000F8A81 /* Assets.xcassets */,
+				824656B51E739D00000F8A81 /* AppDelegate.swift */,
+				824656BE1E739D00000F8A81 /* LaunchScreen.storyboard */,
+				824656C11E739D00000F8A81 /* Info.plist */,
+			);
+			path = TweetyBird;
+			sourceTree = "<group>";
+		};
+		826AE0D21E784B8000020B2F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				826AE0D01E77AB8800020B2F /* HomeDatasourceController.swift */,
+				824656C71E73B0D2000F8A81 /* HomeVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		826AE0D31E784B8600020B2F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				826AE0D81E784CCC00020B2F /* HomeDatasource.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		826AE0D41E784B8C00020B2F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				826AE0D61E784C6C00020B2F /* Cells.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E3B9292391F9E8E2CBFD8F99 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9AEF225073D1A38BE16B20EB /* Pods-TweetyBird.debug.xcconfig */,
+				CDF22BC7A52D7DC6F62A5C14 /* Pods-TweetyBird.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		824656B11E739D00000F8A81 /* TweetyBird */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 824656C41E739D00000F8A81 /* Build configuration list for PBXNativeTarget "TweetyBird" */;
+			buildPhases = (
+				362F596B23915C836919091F /* [CP] Check Pods Manifest.lock */,
+				824656AE1E739D00000F8A81 /* Sources */,
+				824656AF1E739D00000F8A81 /* Frameworks */,
+				824656B01E739D00000F8A81 /* Resources */,
+				E4DB2BBD63CA1396C00F7ACC /* [CP] Embed Pods Frameworks */,
+				7F6419F7B3D11313836F34D1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TweetyBird;
+			productName = TweetyBird;
+			productReference = 824656B21E739D00000F8A81 /* TweetyBird.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		824656AA1E739D00000F8A81 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Michael De La Cruz";
+				TargetAttributes = {
+					824656B11E739D00000F8A81 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = UP5S927B5L;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 824656AD1E739D00000F8A81 /* Build configuration list for PBXProject "TweetyBird" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 824656A91E739D00000F8A81;
+			productRefGroup = 824656B31E739D00000F8A81 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				824656B11E739D00000F8A81 /* TweetyBird */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		824656B01E739D00000F8A81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				824656C01E739D00000F8A81 /* LaunchScreen.storyboard in Resources */,
+				824656BD1E739D00000F8A81 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		362F596B23915C836919091F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7F6419F7B3D11313836F34D1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TweetyBird/Pods-TweetyBird-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4DB2BBD63CA1396C00F7ACC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TweetyBird/Pods-TweetyBird-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		824656AE1E739D00000F8A81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				826AE0D91E784CCC00020B2F /* HomeDatasource.swift in Sources */,
+				826AE0D11E77AB8800020B2F /* HomeDatasourceController.swift in Sources */,
+				826AE0D71E784C6C00020B2F /* Cells.swift in Sources */,
+				824656C81E73B0D2000F8A81 /* HomeVC.swift in Sources */,
+				824656B61E739D00000F8A81 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		824656BE1E739D00000F8A81 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				824656BF1E739D00000F8A81 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		824656C21E739D00000F8A81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		824656C31E739D00000F8A81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		824656C51E739D00000F8A81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AEF225073D1A38BE16B20EB /* Pods-TweetyBird.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UP5S927B5L;
+				INFOPLIST_FILE = TweetyBird/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MichaelD.TweetyBird;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		824656C61E739D00000F8A81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDF22BC7A52D7DC6F62A5C14 /* Pods-TweetyBird.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UP5S927B5L;
+				INFOPLIST_FILE = TweetyBird/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MichaelD.TweetyBird;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		824656AD1E739D00000F8A81 /* Build configuration list for PBXProject "TweetyBird" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				824656C21E739D00000F8A81 /* Debug */,
+				824656C31E739D00000F8A81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		824656C41E739D00000F8A81 /* Build configuration list for PBXNativeTarget "TweetyBird" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				824656C51E739D00000F8A81 /* Debug */,
+				824656C61E739D00000F8A81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 824656AA1E739D00000F8A81 /* Project object */;
+}
