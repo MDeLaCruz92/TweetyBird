@@ -13,10 +13,11 @@
 		824656C01E739D00000F8A81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 824656BE1E739D00000F8A81 /* LaunchScreen.storyboard */; };
 		824656C81E73B0D2000F8A81 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824656C71E73B0D2000F8A81 /* HomeVC.swift */; };
 		826AE0D11E77AB8800020B2F /* HomeDatasourceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826AE0D01E77AB8800020B2F /* HomeDatasourceController.swift */; };
-		826AE0D71E784C6C00020B2F /* Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826AE0D61E784C6C00020B2F /* Cells.swift */; };
+		826AE0D71E784C6C00020B2F /* UserHeaderFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826AE0D61E784C6C00020B2F /* UserHeaderFooter.swift */; };
 		826AE0D91E784CCC00020B2F /* HomeDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826AE0D81E784CCC00020B2F /* HomeDatasource.swift */; };
 		826AE0DD1E79873400020B2F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826AE0DC1E79873400020B2F /* User.swift */; };
 		826AE0DF1E79B7D400020B2F /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826AE0DE1E79B7D400020B2F /* UserCell.swift */; };
+		826AE10A1E7EDFFA00020B2F /* HomeDataSourceController+NavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826AE1091E7EDFFA00020B2F /* HomeDataSourceController+NavBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,10 +29,11 @@
 		824656C11E739D00000F8A81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		824656C71E73B0D2000F8A81 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		826AE0D01E77AB8800020B2F /* HomeDatasourceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDatasourceController.swift; sourceTree = "<group>"; };
-		826AE0D61E784C6C00020B2F /* Cells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cells.swift; sourceTree = "<group>"; };
+		826AE0D61E784C6C00020B2F /* UserHeaderFooter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserHeaderFooter.swift; sourceTree = "<group>"; };
 		826AE0D81E784CCC00020B2F /* HomeDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDatasource.swift; sourceTree = "<group>"; };
 		826AE0DC1E79873400020B2F /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		826AE0DE1E79B7D400020B2F /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		826AE1091E7EDFFA00020B2F /* HomeDataSourceController+NavBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HomeDataSourceController+NavBar.swift"; sourceTree = "<group>"; };
 		9AEF225073D1A38BE16B20EB /* Pods-TweetyBird.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TweetyBird.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TweetyBird/Pods-TweetyBird.debug.xcconfig"; sourceTree = "<group>"; };
 		CDF22BC7A52D7DC6F62A5C14 /* Pods-TweetyBird.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TweetyBird.release.xcconfig"; path = "Pods/Target Support Files/Pods-TweetyBird/Pods-TweetyBird.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,6 +95,7 @@
 			children = (
 				826AE0D01E77AB8800020B2F /* HomeDatasourceController.swift */,
 				824656C71E73B0D2000F8A81 /* HomeVC.swift */,
+				826AE1091E7EDFFA00020B2F /* HomeDataSourceController+NavBar.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -109,7 +112,7 @@
 		826AE0D41E784B8C00020B2F /* View */ = {
 			isa = PBXGroup;
 			children = (
-				826AE0D61E784C6C00020B2F /* Cells.swift */,
+				826AE0D61E784C6C00020B2F /* UserHeaderFooter.swift */,
 				826AE0DE1E79B7D400020B2F /* UserCell.swift */,
 			);
 			name = View;
@@ -250,8 +253,9 @@
 				826AE0D91E784CCC00020B2F /* HomeDatasource.swift in Sources */,
 				826AE0D11E77AB8800020B2F /* HomeDatasourceController.swift in Sources */,
 				826AE0DD1E79873400020B2F /* User.swift in Sources */,
-				826AE0D71E784C6C00020B2F /* Cells.swift in Sources */,
+				826AE0D71E784C6C00020B2F /* UserHeaderFooter.swift in Sources */,
 				824656C81E73B0D2000F8A81 /* HomeVC.swift in Sources */,
+				826AE10A1E7EDFFA00020B2F /* HomeDataSourceController+NavBar.swift in Sources */,
 				824656B61E739D00000F8A81 /* AppDelegate.swift in Sources */,
 				826AE0DF1E79B7D400020B2F /* UserCell.swift in Sources */,
 			);

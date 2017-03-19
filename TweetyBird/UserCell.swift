@@ -1,32 +1,24 @@
 //
-//  Cells.swift
+//  UserCell.swift
 //  TweetyBird
 //
-//  Created by Michael De La Cruz on 3/14/17.
+//  Created by Michael De La Cruz on 3/15/17.
 //  Copyright © 2017 Michael De La Cruz. All rights reserved.
 //
 
 import LBTAComponents
 
-class UserFooter: DatasourceCell {
-  override func setupViews() {
-    super.setupViews()
-    backgroundColor = .green
-  }
-}
-class UserHeader: DatasourceCell {
-  override func setupViews() {
-    super.setupViews()
-    backgroundColor = .blue
-  }
-}
-
 class UserCell: DatasourceCell {
   
   override var datasourceItem: Any? {
     didSet {
-//      nameLabel.text = datasourceItem as? String
+      guard let user = datasourceItem as? User else { return }
+      nameLabel.text = user.name
+      usernameLabel.text = user.username
+      bioTextView.text = user.bioText
+      profileImageView.image = user.profileImage
     }
+    
   }
   
   let profileImageView: UIImageView = {
@@ -56,11 +48,11 @@ class UserCell: DatasourceCell {
     let textView = UITextView()
     textView.text = "iPhone, iPad, iOS Programming Community. Join us to learn Swift, Obj-C and build iOS apps!"
     textView.font = UIFont.systemFont(ofSize: 15)
+    textView.backgroundColor = .clear
     return textView
   }()
   
   let followButton: UIButton = {
-    let twitterBlue = UIColor(r: 61, g: 167, b: 244)
     let button = UIButton()
     button.layer.cornerRadius = 5
     button.layer.borderColor = twitterBlue.cgColor
@@ -69,11 +61,16 @@ class UserCell: DatasourceCell {
     button.setTitleColor(twitterBlue, for: .normal)
     button.setImage(#imageLiteral(resourceName: "follow"), for: .normal)
     button.imageView?.contentMode = .scaleAspectFit
+    button.imageEdgeInsets = UIEdgeInsets(top: 0, left: -8, bottom: 0, right: 0)
     return button
   }()
   
   override func setupViews() {
     super.setupViews()
+        
+    separatorLineView.isHidden = false
+    separatorLineView.backgroundColor = UIColor(r: 230, g: 230, b: 230)
+    
     addSubview(profileImageView)
     addSubview(nameLabel)
     addSubview(usernameLabel)
@@ -84,12 +81,10 @@ class UserCell: DatasourceCell {
     
     nameLabel.anchor(profileImageView.topAnchor, left: profileImageView.rightAnchor, bottom: nil, right: followButton.leftAnchor, topConstant: 0, leftConstant: 8, bottomConstant: 0, rightConstant: 12, widthConstant: 0, heightConstant: 20)
     
-    usernameLabel.anchor(nameLabel.bottomAnchor, left: nameLabel.leftAnchor, bottom: nil, right: nameLabel.rightAnchor, topConstant: 8, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: 0, heightConstant: 20)
+    usernameLabel.anchor(nameLabel.bottomAnchor, left: nameLabel.leftAnchor, bottom: nil, right: nameLabel.rightAnchor, topConstant: 0, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: 0, heightConstant: 20)
     
     bioTextView.anchor(usernameLabel.bottomAnchor, left: usernameLabel.leftAnchor, bottom: self.bottomAnchor, right: self.rightAnchor, topConstant: -4, leftConstant: -4, bottomConstant: 0, rightConstant: 0, widthConstant: 0, heightConstant: 0)
     
     followButton.anchor(topAnchor, left: nil, bottom: nil, right: self.rightAnchor, topConstant: 12, leftConstant: 0, bottomConstant: 0, rightConstant: 12, widthConstant: 120, heightConstant: 34)
-    
-  }
-  
+}
 }
