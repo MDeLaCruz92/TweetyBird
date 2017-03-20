@@ -22,9 +22,9 @@ class HomeDatasource: Datasource {
   
   let tweets: [Tweet] = {
     let myUser = User(name: "Michael De La Cruz", username: "@iOS_Developer", bioText: "We fear what we don't know, but once we know it, we no longer fear it.", profileImage: #imageLiteral(resourceName: "profile_image"))
-    let tweet = Tweet(user: myUser, message: "Welcome to my Office here in NYC, I will make you")
+    let tweet = Tweet(user: myUser, message: "More life, more time to get it done right. Patience is key!")
     
-    let tweet2 = Tweet(user: myUser, message: "Good morning USA, I have a feeling today going to be a wonderful day!")
+    let tweet2 = Tweet(user: myUser, message: "Now this a story all about how my life got flipped-turned upside down, And I like to take a minute. Just sit right there, I'll tell you how I became the prince of a town called Bel Air")
 
     return [tweet, tweet2]
   }()
