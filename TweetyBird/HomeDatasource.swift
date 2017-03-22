@@ -15,29 +15,14 @@ class HomeDatasource: Datasource, JSONDecodable {
   let users: [User]
   
   required init(json: JSON) throws {
-    var users = [User]()
-    
-    let array = json["users"].array
-    for userJson in array! {
-      let name = userJson["name"].stringValue
-      let username = userJson["username"].stringValue
-      let bio = userJson["bio"].stringValue
-      
-      let user = User(name: name, username: username, bioText: bio, profileImage: UIImage())
-      users.append(user)
+    guard let usersJsonArray = json["users"].array, let tweetsJsonArray = json["tweets"].array else { throw NSError(domain: "com.letsbuildthatapp", code: 1, userInfo: [NSLocalizedDescriptionKey: "Parsing JSON was not valid."])
     }
     
-    self.users = users
+    self.users = usersJsonArray.map{User(json: $0)}
+    self.tweets = tweetsJsonArray.map{Tweet(json: $0)}
   }
   
-  let tweets: [Tweet] = {
-    let myUser = User(name: "Michael De La Cruz", username: "@iOS_Developer", bioText: "We fear what we don't know, but once we know it, we no longer fear it.", profileImage: #imageLiteral(resourceName: "profile_image"))
-    let tweet = Tweet(user: myUser, message: "More life, more time to get it done right. Patience is key!")
-    
-    let tweet2 = Tweet(user: myUser, message: "Now this a story all about how my life got flipped-turned upside down, And I like to take a minute. Just sit right there, I'll tell you how I became the prince of a town called Bel Air")
-
-    return [tweet, tweet2]
-  }()
+  let tweets: [Tweet]
   
   override func footerClasses() -> [AnyClass]? {
     return [UserFooter.self]
