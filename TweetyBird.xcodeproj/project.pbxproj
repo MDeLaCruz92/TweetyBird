@@ -20,6 +20,7 @@
 		826AE10A1E7EDFFA00020B2F /* HomeDataSourceController+NavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826AE1091E7EDFFA00020B2F /* HomeDataSourceController+NavBar.swift */; };
 		826AE10C1E7F376900020B2F /* TweetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826AE10B1E7F376900020B2F /* TweetCell.swift */; };
 		826AE10E1E7F443400020B2F /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826AE10D1E7F443400020B2F /* Tweet.swift */; };
+		8289FFC91E8197040059A122 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8289FFC81E8197040059A122 /* Service.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		826AE1091E7EDFFA00020B2F /* HomeDataSourceController+NavBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HomeDataSourceController+NavBar.swift"; sourceTree = "<group>"; };
 		826AE10B1E7F376900020B2F /* TweetCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetCell.swift; sourceTree = "<group>"; };
 		826AE10D1E7F443400020B2F /* Tweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
+		8289FFC81E8197040059A122 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		9AEF225073D1A38BE16B20EB /* Pods-TweetyBird.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TweetyBird.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TweetyBird/Pods-TweetyBird.debug.xcconfig"; sourceTree = "<group>"; };
 		CDF22BC7A52D7DC6F62A5C14 /* Pods-TweetyBird.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TweetyBird.release.xcconfig"; path = "Pods/Target Support Files/Pods-TweetyBird/Pods-TweetyBird.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,6 +85,7 @@
 		824656B41E739D00000F8A81 /* TweetyBird */ = {
 			isa = PBXGroup;
 			children = (
+				8289FFC71E8196F50059A122 /* Service */,
 				826AE0D41E784B8C00020B2F /* View */,
 				826AE0D31E784B8600020B2F /* Model */,
 				826AE0D21E784B8000020B2F /* Controller */,
@@ -122,6 +125,14 @@
 				826AE10B1E7F376900020B2F /* TweetCell.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		8289FFC71E8196F50059A122 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				8289FFC81E8197040059A122 /* Service.swift */,
+			);
+			name = Service;
 			sourceTree = "<group>";
 		};
 		E3B9292391F9E8E2CBFD8F99 /* Pods */ = {
@@ -264,6 +275,7 @@
 				826AE0D71E784C6C00020B2F /* UserHeaderFooter.swift in Sources */,
 				824656C81E73B0D2000F8A81 /* HomeVC.swift in Sources */,
 				826AE10A1E7EDFFA00020B2F /* HomeDataSourceController+NavBar.swift in Sources */,
+				8289FFC91E8197040059A122 /* Service.swift in Sources */,
 				824656B61E739D00000F8A81 /* AppDelegate.swift in Sources */,
 				826AE0DF1E79B7D400020B2F /* UserCell.swift in Sources */,
 			);

@@ -7,6 +7,8 @@
 //
 
 import LBTAComponents
+import TRON
+import SwiftyJSON
 
 class HomeDatasourceController: DatasourceController {
   
@@ -21,8 +23,12 @@ class HomeDatasourceController: DatasourceController {
     
     setupNavigationBarItems()
     
-    let homeDatasource = HomeDatasource()
-    self.datasource = homeDatasource
+    print(1)
+    Service.sharedInstance.fetchHomeFeed { (homeDatasource) in
+      print(3)
+      self.datasource = homeDatasource
+    }
+  
   }
   
   func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {

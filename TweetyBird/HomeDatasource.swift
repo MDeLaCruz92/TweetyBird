@@ -7,18 +7,28 @@
 //
 
 import LBTAComponents
+import TRON
+import SwiftyJSON
 
-class HomeDatasource: Datasource {
+class HomeDatasource: Datasource, JSONDecodable {
   
-  let users: [User] = {
-    let myUser = User(name: "Michael De La Cruz", username: "@iOS_Developer", bioText: "We fear what we don't know, but once we know it, we no longer fear it.", profileImage: #imageLiteral(resourceName: "profile_image"))
+  let users: [User]
+  
+  required init(json: JSON) throws {
+    var users = [User]()
     
-    let bobbyUser = User(name: "Bobby", username: "@Bobbyyyy", bioText: "Bobby is a Mobile and Web Developer who likes to take risks and go beyond the expectations for his clients.", profileImage: #imageLiteral(resourceName: "bobbys_profile_image"))
+    let array = json["users"].array
+    for userJson in array! {
+      let name = userJson["name"].stringValue
+      let username = userJson["username"].stringValue
+      let bio = userJson["bio"].stringValue
+      
+      let user = User(name: name, username: username, bioText: bio, profileImage: UIImage())
+      users.append(user)
+    }
     
-    let iOSTenCourse = User(name: "iOS 10 Course", username: "@iOS10Course", bioText: "This recently released course on https://github.com/MDelaCruz92 provides a helping hand and excellent guidance on how to use UITableView and UICollectionView", profileImage: #imageLiteral(resourceName: "profile_image"))
-        
-    return [myUser, bobbyUser, iOSTenCourse]
-  }()
+    self.users = users
+  }
   
   let tweets: [Tweet] = {
     let myUser = User(name: "Michael De La Cruz", username: "@iOS_Developer", bioText: "We fear what we don't know, but once we know it, we no longer fear it.", profileImage: #imageLiteral(resourceName: "profile_image"))

@@ -9,4 +9,6 @@ target 'TweetyBird' do
 
   pod "LBTAComponents"
 
+  pod 'TRON', '~> 2.0.0'
+
 end
