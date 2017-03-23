@@ -57,17 +57,35 @@ class HomeDatasourceController: DatasourceController {
   
   override func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
     
-    if let user = self.datasource?.item(indexPath) as? User {
-      let approximateWidthOfBioTextView = view.frame.width - 12 - 50 - 12 - 2
-      let size = CGSize(width: approximateWidthOfBioTextView, height: 1000)
-      let attributes = [NSFontAttributeName: UIFont.systemFont(ofSize: 15)]
+    if indexPath.section == 0 {
       
-      let estimatedFrame = NSString(string: user.bioText).boundingRect(with: size, options: .usesLineFragmentOrigin, attributes: attributes, context: nil)
+      guard let user = self.datasource?.item(indexPath) as? User else { return .zero }
       
-      return CGSize(width: view.frame.width, height: estimatedFrame.height + 66)
+      let estimatedHeight = estimatedHeightForText(user.bioText)
+      
+      return CGSize(width: view.frame.width, height: estimatedHeight + 66)
+    } else if indexPath.section == 1 {
+      //tweets size estimation
+      
+      guard let tweet = datasource?.item(indexPath) as? Tweet else { return .zero }
+      
+      let estimatedHeight = estimatedHeightForText(tweet.message)
+      
+      return CGSize(width: view.frame.width, height: estimatedHeight + 74)
     }
     
+    
     return CGSize(width: view.frame.width, height: 200)
+  }
+  
+  private func estimatedHeightForText(_ text: String) -> CGFloat {
+    let approximateWidthOfBioTextView = view.frame.width - 12 - 50 - 12 - 2
+    let size = CGSize(width: approximateWidthOfBioTextView, height: 1000)
+    let attributes = [NSFontAttributeName: UIFont.systemFont(ofSize: 15)]
+    
+    let estimatedFrame = NSString(string: text).boundingRect(with: size, options: .usesLineFragmentOrigin, attributes: attributes, context: nil)
+    
+    return estimatedFrame.height
   }
   
   func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
